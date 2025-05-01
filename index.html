@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Especifica la codificación de caracteres y configuración para dispositivos móviles -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título que aparece en la pestaña del navegador -->
+  <title>BiciAccesorios</title>
+
+  <!-- Enlace al archivo de estilos CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Encabezado principal de la página -->
+  <header>
+    <h1>BiciAccesorios</h1>
+    <nav>
+      <!-- Menú de navegación con enlaces internos -->
+      <ul>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal de la página -->
+  <main>
+    <!-- Sección de bienvenida -->
+    <section id="bienvenida">
+      <h2>Bienvenido a BiciAccesorios</h2>
+      <p>Tu tienda de confianza para conseguir accesorios para bicicletas de calidad.</p>
+    </section>
+
+    <!-- Sección donde se muestran los productos disponibles -->
+    <section id="productos">
+      <h3>Nuestros Productos</h3>
+
+      <!-- Cada div representa un producto -->
+      <div class="producto">
+        <img src="img/relacion.jpg" alt="Shimano Deore">
+        <h4>Relación MTB 1x10</h4>
+        <p>$450.000</p>
+        <p>Relación Shimano Deore MTB 1x10.</p>
+      </div>
+
+      <div class="producto">
+        <img src="img/suspension.jpg" alt="Suspensión Fox 29">
+        <h4>suspensión Fox Racing Shox 32 Float 29In Sc Factory Grip Sl 
+            Tenedor Ajuste de 3 posiciones, 3.937 in, rastrillo de 1.732</h4>
+        <p>$4.300.000</p>
+        <p>proteje tus articulaciones y reduce los impactos causados por la bivración.</p>
+      </div>
+
+      <div class="producto">
+        <img src="img/llantas.jpg" alt="Llantas Maxxis ikon 29">
+        <h4>Maxxis ikon</h4>
+        <p>$95.000</p>
+        <p>Desafía los terrenos más difíciles con nuestras llantas Maxxis.</p>
+      </div>
+    </section>
+
+    <!-- Formulario de contacto para que los usuarios puedan enviar mensajes -->
+    <section id="contacto">
+      <h3>Contáctanos</h3>
+      <form>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página con derechos de autor -->
+  <footer>
+    <p>&copy; 2025 BiciAccesorios. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
