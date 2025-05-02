@@ -66,10 +66,21 @@
         <p>La mejor protección para tus manos.</p>
       </div>
       <br>
-    <div style="text-align: center; margin: 20px 0;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XUD2l2UYELI" 
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    allowfullscreen></iframe>
+    <!-- Sección de video YouTube responsive -->
+<section style="display: flex; justify-content: center; align-items: center; padding: 40px 0; background-color: #f9f9f9;">
+    
+    <!-- Contenedor flexible para que el video mantenga proporción -->
+    <div style="position: relative; width: 90%; max-width: 800px; padding-bottom: 56.25%; /* Proporción 16:9 */ box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden;">
+        
+        <!-- Iframe del video YouTube ajustado a la proporción del contenedor -->
+        <iframe src="https://www.youtube.com/embed/XUD2l2UYELI" 
+        title="YouTube video player" frameborder="0" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
+    
+    </div>
+</section>
 </div>
 
     </section>
