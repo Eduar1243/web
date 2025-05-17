@@ -1,16 +1,15 @@
-/* Estilos generales para toda la página */
 body {
-    font-family: Arial, sans-serif; /* Fuente legible y común */
+    font-family: Arial, sans-serif; /* Tipo de Fuente */
     background-color: #f5f5f5; /* Fondo gris claro */
-    margin: 0;
-    padding: 0;
+    margin: 0; /* especifica que no lleva margen en el proycto */
+    padding: 0; /* esppecifica que no lleva relleno */
     color: #333; /* Color de texto oscuro */
   }
   
   /* Encabezado principal */
   header {
     background-color: #007BFF; /* Azul fuerte */
-    padding: 20px;
+    padding: 30px;
     color: white;
     text-align: center;
   }
@@ -90,7 +89,22 @@ body {
   }
   
   button:hover {
-    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+    background-color: #0056b3; /* Azul se resalta al pasar el mouse */
+  }
+
+  .scroll{
+    background-color: #222;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* sombra en el scroll */
+  }
+  .scroll img{
+    filter: invert(15%);
+  }
+  
+  
+
+  .carrito{
+    width: 45px;
+    height: auto;
   }
   
   /* Pie de página */
