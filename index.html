@@ -10,11 +10,21 @@
 
   <!-- Enlace al archivo de estilos CSS externo -->
   <link rel="stylesheet" href="style.css">
+  
+  <!-- enlace al archivo js externo -->
+   <script defer src="webmedia.js"></script>
 </head>
 <body>
   <!-- Encabezado principal de la página -->
-  <header>
-    <h1>BiciAccesorios</h1>
+  <header id="header">
+    <h1>Bici Accesorios</h1>
+    <!-- sección donde introducimos el carrito de compras -->
+    <section id="Shoping-Car">
+    <h2>Shoping Car</h2>
+    <!-- Icono para el carrito de compras -->
+    <img class="carrito" src="img/carrito de compras.png" alt="carrito"> 
+    <p>Carrito</p> <!-- Parrafo para identificar el carrito de compras -->
+    </section>
     <nav>
       <!-- Menú de navegación con enlaces internos -->
       <ul>
@@ -28,13 +38,13 @@
   <main>
     <!-- Sección de bienvenida -->
     <section id="bienvenida">
-      <h2>Bienvenido a BiciAccesorios</h2>
+      <h3>Bienvenido a Bici Accesorios</h3>
       <p>Tu tienda de confianza para conseguir accesorios de calidad para todo tipo de bicicletas.</p>
     </section>
 
     <!-- Sección donde se muestran los productos disponibles -->
     <section id="productos">
-      <h3>Nuestros Productos</h3>
+      <h4>Nuestros Productos</h4>
 
       <!-- Cada div representa un producto -->
       <div class="producto">
@@ -42,6 +52,8 @@
         <h4>Relación MTB 1x10</h4>
         <p>$450.000</p>
         <p>Relación Shimano Deore MTB 1x10.</p>
+        <button class="btn-comprar">Comprar</button>
+        <button class="btn-agregar">Agregar al carrito</button>
       </div>
 
       <div class="producto">
@@ -50,6 +62,8 @@
             Tenedor Ajuste de 3 posiciones, 3.937 in, rastrillo de 1.732</h4>
         <p>$4.300.000</p>
         <p>proteje tus articulaciones y reduce los impactos causados por la vibración.</p>
+        <button class="btn-comprar">Comprar</button>
+        <button class="btn-agregar">Agregar al carrito</button>
       </div>
 
       <div class="producto">
@@ -57,6 +71,8 @@
         <h4>Maxxis ikon 29</h4>
         <p>$95.000</p>
         <p>Desafía los terrenos más difíciles con nuestras llantas Maxxis.</p>
+        <button class="btn-comprar">Comprar</button>
+        <button class="btn-agregar">Agregar al carrito</button>
       </div>
 
       <div class="producto">
@@ -64,13 +80,15 @@
         <h4>GUANTES FOX FLEXAIR PARK BLANCO/AZUL</h4>
         <p>$84.900</p>
         <p>La mejor protección para tus manos.</p>
-      </div>
-      <br>
-    <!-- Sección de video YouTube responsive -->
-<section style="display: flex; justify-content: center; align-items: center; padding: 40px 0; background-color: #f9f9f9;">
+        <button class="btn-comprar">Comprar</button>
+        <button class="btn-agregar">Agregar al carrito</button>
+       </div>
+       <br>
+       <!-- Sección de video YouTube responsive -->
+       <section style="display: flex; justify-content: center; align-items: center; padding: 40px 0; background-color: #f9f9f9;">
     
-    <!-- Contenedor flexible para que el video mantenga proporción -->
-    <div style="position: relative; width: 90%; max-width: 800px; padding-bottom: 56.25%; /* Proporción 16:9 */ box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden;">
+       <!-- Contenedor flexible para que el video mantenga proporción -->
+       <div style="position: relative; width: 90%; max-width: 800px; padding-bottom: 56.25%; /* Proporción 16:9 */ box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden;">
         
         <!-- Iframe del video YouTube ajustado a la proporción del contenedor -->
         <iframe src="https://www.youtube.com/embed/XUD2l2UYELI" 
@@ -79,7 +97,7 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowfullscreen></iframe>
     
-    </div>
+  
 </section>
 </div>
 
@@ -101,6 +119,13 @@
         <button type="submit">Enviar</button>
       </form>
     </section>
+    <!-- seccion visible del carrito --> 
+     <section id = "carrito" style = "border: 1px solid #ccc; padding: 10px; margin: 20px;">
+      <h3>carrito de compras</h3>
+      <ul id="lista-carrito"></ul>
+      <p><strong>Total: </strong>$<span id="total"></span></p>
+      <button id="pagar">Pagar</button>
+     </section>
   </main>
 
   <!-- Pie de página con derechos de autor -->
